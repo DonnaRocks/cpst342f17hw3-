@@ -7,6 +7,7 @@
     <meta name="author" content="">
 
     <title>About the Authors!</title>
+    <link href="style.css" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap.min.css" rel="stylesheet">
@@ -38,7 +39,7 @@
     <main role="main" class="container">
 
       <div class="starter-template">
-        <h1>About the Donna and Jose</h1>
+        <h1 id="name"></h1>
       </div>
 
       <div class="row">
@@ -69,7 +70,12 @@
       </div>
 
     </main>
-
+    <script type = "text/javascript">
+        var name = prompt("Enter your username!", "");
+        alert("Hello! " +  name);
+        document.getElementById("name").innerHTML="Welcome " + name;
+    </script>
+    <script src="app.js"></script>
 
   </body>
 </html>
